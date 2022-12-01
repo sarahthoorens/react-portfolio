@@ -1,2 +1,2 @@
 # react-portfolio
-Profession portfolio created using React and TailwindCSS
+Professional portfolio created using React and TailwindCSS
