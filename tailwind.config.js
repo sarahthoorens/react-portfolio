@@ -3,6 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+          'poppins': ['Poppins', 'sans-serif'],
+          'overpass': ['Overpass', 'sans-serif']
+          }
+        },
+
       colors:
       {
         gray :'#6B7280',
@@ -10,7 +16,6 @@ module.exports = {
         green : '#10B981',
         white: '#F9FAFB',
     },
-  },
     colors: {
       transparent: 'transparent',
       rose: '#BF8B85',
@@ -18,12 +23,10 @@ module.exports = {
       indigo: '#475B63',
       lightBlue: '#AED9E0',
       navy: '#344966'
-
-    },
-    
   },
-  variants: {
-    extend: {},
+},
+    variants: {
+      extend: {},
   },
   plugins: [],
 }

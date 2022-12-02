@@ -66,8 +66,8 @@ export default function Contact() {
  
       <form name="contact" onSubmit={handleSubmit}
         className="lg:w-1/2 md:w-1/2 text-vanilla flex flex-col md:ml-auto w-full p-8 mt-8 md:mt-3 bg-navy shadow-md rounded">
-        <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font">
-          Hire Me
+        <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font ">
+          Work With Me
         </h2>
         <p className="leading-relaxed mb-5">
           I'm always looking for new opportunities to build and learn. If you have a project you'd like to discuss, please get in touch.
@@ -111,7 +111,7 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="text-vanilla bg-rose border-0 py-2 px-6 focus:outline-none hover:bg-navy rounded text-lg">
+          className="text-vanilla bg-rose border-0 py-2 px-6 focus:outline-none hover:bg-indigo rounded text-lg">
           Submit
         </button>
       </form>

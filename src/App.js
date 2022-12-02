@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <main className="bg-indigo body-font">
+    <main className="bg-indigo body-font font-overpass">
       <Navbar />
       <About />
       <Projects />
