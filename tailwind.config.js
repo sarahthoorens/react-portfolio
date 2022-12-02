@@ -1,20 +1,29 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx'],
-  content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}",
-    "/public/index.html"
-  ],
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        'rose': '#BF8B85',
-        'vanilla': '#FAF3DD',
-        'baby-blue': '#AED9E0',
-        'navy': '#344966',
-        'indigo': '#475B63'
-      }
+      colors:
+      {
+        gray :'#6B7280',
+        red : '#EF4444',
+        green : '#10B981',
+        white: '#F9FAFB',
     },
+  },
+    colors: {
+      transparent: 'transparent',
+      rose: '#BF8B85',
+      vanilla: '#FAF3DD',
+      indigo: '#475B63',
+      lightBlue: '#AED9E0',
+      navy: '#344966'
+
+    },
+    
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 }
