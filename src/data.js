@@ -27,7 +27,7 @@ export const projects = [
      title: "Mongo Social Network API",
      subtitle: "JavaScript, Express.js, Node, MongoDB, Mongoose",
      description:
-       "an API for a social network crud app where users can share thoughts, react to friends' thoughts and create a friend list.",
+       "API build for a social network crud app where users can share thoughts, react to friends' thoughts and create a friend list.",
      image: "./assets/snapi.gif",
      link: "https://github.com/sarahthoorens/social-network-api",
    },

@@ -5,12 +5,12 @@ export default function Navbar() {
   return (
     <header className="bg-navy md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <section className="title-font font-medium text-white mb-4 md:mb-0">
-          <a href="#about" className="ml-3 text-xl text-vanilla hover:text-white">
+        <section className="title-font font-medium text-white mb-4 md:mb-0 ">
+          <a href="#about" className="lg:ml-3 text-xl text-vanilla hover:text-white">
             Sarah Thoorens
           </a>
         </section>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-vanilla	flex flex-wrap items-center text-base justify-center">
+        <nav className="md:mx-auto sm:mx-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-vanilla	flex flex-wrap items-center text-base justify-center">
           <a href="#projects" className="mr-5 text-vanilla hover:text-white">
             Past Work
           </a>
