@@ -6,16 +6,15 @@ module.exports = {
       fontFamily: {
           'poppins': ['Poppins', 'sans-serif'],
           'overpass': ['Overpass', 'sans-serif']
-          }
-        },
-
+          },
       colors:
       {
         gray :'#6B7280',
         red : '#EF4444',
         blue : '#3B82F6',
         white: '#F9FAFB',
-    },
+    },  
+  },
     colors: {
       transparent: 'transparent',
       rose: '#BF8B85',

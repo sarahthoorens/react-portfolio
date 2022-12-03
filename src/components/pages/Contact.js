@@ -53,10 +53,10 @@ export default function Contact() {
               
             <div className="flex flex-row mx-auto mt-1">
 
-                <a href="linkedin.com/in/sarahthoorens" className="pr-2">
+                <a href="http://linkedin.com/in/sarahthoorens" className="pr-2">
                   <img alt="linked-in" className="object-cover" src="./assets/linkedin-32.ico"></img>
                 </a>
-                <a href="github.com/sarahthoorens" className="">
+                <a href="http://github.com/sarahthoorens" className="">
                   <img alt="github" className="object-cover" src="./assets/github-32.png"></img>
                 </a>
 

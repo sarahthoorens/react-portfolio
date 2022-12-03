@@ -1,6 +1,6 @@
 import { CogIcon, ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/solid";
 import React, { useState } from 'react';
-import { projects } from "../data";
+import { projects } from "../../data";
 
 
 export default function Projects() {
