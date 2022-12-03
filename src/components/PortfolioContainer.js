@@ -14,7 +14,7 @@ const PortfolioContainer = () => {
       return <Home />;
     }
     if (currentPage === 'About') {
-      return <About />;
+      return <About currentPage={currentPage} handlePageChange={handlePageChange}/>;
     }
     if (currentPage === 'Projects') {
       return <Projects />;

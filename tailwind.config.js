@@ -10,11 +10,29 @@ module.exports = {
       colors:
       {
         gray :'#6B7280',
+        black : '#1F2937',
         red : '#EF4444',
         blue : '#3B82F6',
         white: '#F9FAFB',
-    },  
+    },
+
+    keyframes: {
+      pulse: {
+        '0%' : {
+          opacity: '0',
+          transform: 'translateY(-20px)',
+        },
+        '100%' : {
+          opacity: '1',
+          transform: 'translateY(0)',
+        }
+      }
+    } ,
+
+    animation: {
+      pulse: 'pulse 2s ease',
   },
+},
     colors: {
       transparent: 'transparent',
       rose: '#BF8B85',

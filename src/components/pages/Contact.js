@@ -80,7 +80,7 @@ export default function Contact() {
             type="text"
             id="name"
             name="name"
-            className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -92,7 +92,7 @@ export default function Contact() {
             type="email"
             id="email"
             name="email"
-            className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
@@ -105,7 +105,7 @@ export default function Contact() {
           <textarea
             id="message"
             name="message"
-            className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
