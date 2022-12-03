@@ -13,8 +13,8 @@ export default function Home() {
             
               <br className="text-xl" /><h2 className="title-font text-3xl text-vanilla">Ambitious web developer, creative tinkerer, enthusiastic problem-solver</h2> 
           </div>
-             <div className="lg:max-w-lg lg:w-full relative right-0  md:w-1/2 w-5/6 sm:w-1/2">
-                <img alt="Sarah" className="max-w-xs rounded-full object-cover animate-[bounce_2s_ease-in-out_infinite]" src="../../assets/Sarah.png"/>
+             <div className="lg:max-w-lg lg:w-full relative right-0 flex flex-wrap md:w-1/2 w-5/6 sm:w-1/2">
+                <img alt="Sarah" className="max-w-xs rounded-full object-cover" src="../../assets/Sarah.png"/>
               </div>
            
           </div>

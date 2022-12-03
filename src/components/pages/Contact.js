@@ -1,29 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-  function handleSubmit(e) {
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
 
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email) || !name) {
+      setErrorMessage('Email or name is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (!message) {
+      setErrorMessage(
+        `Please enter a message.`
+      );
+      return;
+    }
+    alert(`Message sent!`);
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setName('');
+    setEmail('');
+    setMessage('');
+    window.location.reload();
+
+  };
   return (
     <section id="contact" className="relative">
        <div className="container flex flex-row p-4 space-x-8 md:mx-auto sm:flex-nowrap flex-wrap">
@@ -64,7 +89,7 @@ export default function Contact() {
           </div>
         </div>
  
-      <form name="contact" onSubmit={handleSubmit}
+      <form name="contact" onSubmit={handleFormSubmit}
         className="lg:w-1/2 md:w-1/2 text-vanilla flex flex-col md:ml-auto w-full p-8 mt-8 md:mt-3 bg-navy shadow-md rounded">
         <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font ">
           Work With Me
@@ -78,10 +103,11 @@ export default function Contact() {
           </label>
           <input
             type="text"
+            value={name}
             id="name"
             name="name"
             className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleInputChange}
           />
         </div>
         <div className="relative mb-4">
@@ -93,7 +119,7 @@ export default function Contact() {
             id="email"
             name="email"
             className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleInputChange}
           />
         </div>
         <div className="mb-4">
@@ -106,15 +132,22 @@ export default function Contact() {
             id="message"
             name="message"
             className="w-full bg-white rounded border border-white focus:border-white focus:ring-2 focus:ring-indigo text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={handleInputChange}
           />
         </div>
         <button
           type="submit"
+          onClick={handleFormSubmit}
           className="text-vanilla bg-rose border-0 py-2 px-6 focus:outline-none hover:bg-indigo rounded text-lg">
           Submit
         </button>
+        {errorMessage && (
+        <div><br></br>
+          <p className="error-text">{errorMessage}</p>
+        </div>   
+      )}
       </form>
+
       </div>
     </section>
   );
