@@ -1,4 +1,4 @@
-import { CodeIcon, ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/solid";
+import { CogIcon, ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/solid";
 import React, { useState } from 'react';
 import { projects } from "../data";
 
@@ -20,7 +20,7 @@ export default function Projects() {
     <section id="projects" className="bg-indigo body-font">
       <div className="container py-8 mx-auto flex-col justify-content-center text-center lg:px-20 ">
         <div className="flex flex-col w-full mb-20">
-          <CodeIcon className="mx-auto inline-block w-10 mb-4 text-vanilla" />
+          <CogIcon className="mx-auto inline-block w-10 mb-4 text-vanilla" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-vanilla">
                 Apps I've Built
             </h1>
@@ -35,10 +35,10 @@ export default function Projects() {
             return (
                               
               <a href={project.link} key={project.image} className=" p-2">
-               <div className="relative ">
+               <div className="relative">
 
-                  <div className={index === current ? "project active" : "project"} key={index}>
-                  {index === current && (<img alt="featured project" className="max-h-96 mx-auto border-4 border-navy rounded-md" src={project.image}/>)}
+                  <div className={index === current ? "ease-in-out scale-125 duration-1000 opacity-100" : "opacity-0 transition duration-1000"} key={index}>
+                  {index === current && (<img alt="featured project" className="max-h-full mx-auto border-4 border-indigo rounded-xl" src={project.image}/>)}
                   {index === current && (<div className="px-5 py-5 absolute max-h-full mx-auto p-2 z-10 border-4 top-1 bottom-1 left-1 right-1 max-w-xl border-vanilla bg-indigo opacity-0 hover:opacity-95 bg-navy">
                           <h2 className="tracking-widest text-sm title-font font-medium text-green mb-1">
                           {project.subtitle}

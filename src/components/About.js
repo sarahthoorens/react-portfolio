@@ -8,6 +8,7 @@ export default function About() {
             <h1 className="title-font text-vanilla base:text-4xl text-4xl mb-4 font-medium">
             Hi, I'm Sarah!  
             </h1>
+            
               <br className="text-xl" /><h2 className="title-font text-3xl text-vanilla">Ambitious web developer, creative tinkerer, enthusiastic problem-solver</h2> 
               <br className="text-m"/>
             <p className="mb-8 leading-relaxed text-vanilla">
@@ -24,6 +25,9 @@ export default function About() {
               </a>
             </div>
           </div>
+          <div className="lg:max-w-lg lg:w-full relative right-0  md:w-1/2 w-5/6 sm:w-1/2">
+          <img alt="Sarah" className="max-w-xs rounded-full object-cover " src="../assets/Sarah.png"/>
+            </div>
         </div>
       </section>
     );
