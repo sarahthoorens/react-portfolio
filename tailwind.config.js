@@ -13,7 +13,7 @@ module.exports = {
       {
         gray :'#6B7280',
         red : '#EF4444',
-        green : '#10B981',
+        blue : '#3B82F6',
         white: '#F9FAFB',
     },
     colors: {
@@ -22,7 +22,8 @@ module.exports = {
       vanilla: '#FAF3DD',
       indigo: '#475B63',
       lightBlue: '#AED9E0',
-      navy: '#344966'
+      navy: '#344966',
+      green : '#10B981'
   },
 },
     variants: {
