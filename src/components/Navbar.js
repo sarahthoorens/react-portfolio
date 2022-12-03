@@ -4,8 +4,8 @@ import React from "react";
 const Navbar = ({ currentPage, handlePageChange }) => {
 
   return (
-    <header className="bg-navy md:sticky ">
-      <div className="container mx-auto flex flex-wrap md:flex-row text-center flex-align-center p-5 lg:flex-row sm:text-left flex-col items-center">
+    <header className="bg-navy md:sticky z-10">
+      <div className="container mx-auto flex flex-wrap p-5 md:flex-row lg:flex-row flex-col text-center sm:text-left  items-center">
         <section className="title-font inline-text font-large text-vanilla mb-4 md:mb-0 ">
           <a href="#home"
           onClick={() => handlePageChange('Home')}
@@ -13,8 +13,8 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             Sarah Thoorens
           </a>
         </section>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-vanilla flex flex-wrap items-center text-base justify-center">
-          <ul className='nav nav-tabs'>
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-vanilla flex flex-wrap inline-flex text-base">
+          <ul className='nav flex flex-row md:flex-row lg:flex-row flex-col'>
             <li className='nav-item'>
               <a href="#about"
                 onClick={() => handlePageChange('About')}

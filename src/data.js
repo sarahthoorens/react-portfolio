@@ -19,7 +19,7 @@ export const projects = [
      title: "Node README Generator",
      subtitle: "Node.js, JavaScript",
      description:
-       "Command-line application that dynamically generates a professional README in markdown.",
+       "Command-line application that dynamically generates a professional README in markdown",
      image: "./assets/nodereadme.gif",
      link: "https://github.com/sarahthoorens/node-readme",
    },
@@ -31,4 +31,20 @@ export const projects = [
      image: "./assets/snapi.gif",
      link: "https://github.com/sarahthoorens/social-network-api",
    },
+   {
+    title: "Coding Quiz",
+    subtitle: "HTML, CSS, JavaScript, local storage",
+    description:
+      "A multiple-choice quiz that includes a timer and keeps score. The user can save their score and initials to local storage.",
+    image: "./assets/coding-quiz.jpg",
+    link: "https://github.com/sarahthoorens/codingQuiz",
+  },
+  {
+    title: "Day Scheduler",
+    subtitle: "JavaScript, Bootstrap, JQuery, HTML, CSS",
+    description:
+      "An hourly day planner that keeps updated information on refresh and shows what items are on the future, past and present agenda.",
+    image: "./assets/scheduler.png",
+    link: "https://sarahthoorens.github.io/scheduler/",
+  }
  ];
