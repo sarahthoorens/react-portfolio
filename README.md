@@ -3,7 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- **Visit the [Deployed Site here.](https://sarahthoorensdevblog.herokuapp.com/)**
+ **Visit the [Deployed Site here.](https://sarahthoorens.github.io/react-portfolio/)**
 
   **Deployment Date:**  12/05/22 <br>
  
@@ -65,7 +65,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Usage 
 
-To use this program, simply visit the deployed site. <br>
+To use this program, simply visit the [deployed site](https://sarahthoorens.github.io/react-portfolio/). <br>
 
 To deploy the application locally run ```npm start``` in the terminal.
 
@@ -75,7 +75,9 @@ _<p align="center">Landing Page</p>_
 </br>
 
   ## Challenges
-This was my first React app build and my first time using Tailwind CSS. I originally built the site as a one-pager using href page anchors to move users to different sections of the page. Converting to conditional rendering was challenging, although less of a headache than I anticipated. The biggest issue I ran into was getting a "TypeError: "handleInputFom" is not a function" within my Contact.js. I eventually found my problem to be missing {} surrounding the function parameters. I appreciate the very specific nature of React and was glad to have found that particularly obvious solution. <br>
+This was my first React app build and my first time using Tailwind CSS. I originally built the site as a one-pager using href page anchors to move users to different sections of the page. Converting to conditional rendering was challenging, although less of a headache than I anticipated. The biggest issue I ran into was getting a "TypeError: "handleInputFom" is not a function" within my Contact.js. I eventually found my problem to be missing {} surrounding the function parameters. I appreciate the very specific nature of React and was glad to have found that particularly obvious solution. 
+
+Deploying to GitHub Pages required some troubleshooting, as Tailwind uses a dead browerslist version.<br>
 
   ## Tests
 
@@ -94,3 +96,5 @@ This was my first React app build and my first time using Tailwind CSS. I origin
 
 ## Credits
 <a target="_blank" href="https://icons8.com/icon/62856/github">GitHub</a> Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+<a target="_blank" href="https://coolors.co/">Coolors</a> Color Scheme Generator
