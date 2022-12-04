@@ -11,7 +11,10 @@ export default function Home() {
             Hello, I'm Sarah!  
             </h1>
             
-              <br className="text-xl" /><h2 className="title-font text-3xl text-vanilla">Ambitious web developer, creative tinkerer, enthusiastic problem-solver</h2> 
+              <br className='text-xl' />
+              <h2 className='title-font text-3xl text-vanilla'>Ambitious web developer, creative tinkerer, enthusiastic problem-solver</h2>
+              <br className='text-lg' /> 
+              <h2 className='title-font text-3lg text-vanilla'> Welcome to this space.</h2>
           </div>
              <div className="lg:max-w-lg lg:w-full relative right-0 flex flex-wrap md:w-1/2 w-5/6 sm:w-1/2">
                 <img alt="Sarah" className="max-w-xs rounded-full object-cover" src="../../assets/Sarah.png"/>

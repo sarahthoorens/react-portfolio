@@ -64,28 +64,18 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ```
 
 ## Usage 
-Users are greeted with a landing page of all blog posts,which indicate name and date of post. Users can sign up, then log in to gain access to detailed posts where they may add comments and create blog entries of their own. 
+
+To use this program, simply visit the deployed site. <br>
+
+To deploy the application locally run ```npm start``` in the terminal.
 
 ## Deployed Screenshots
-![landing-homepage-view](/assets/homepage.png)
-_<p align="center">landing page view (user may click on linked title to view entry and add comments if logged in or will be prompted to log in upon click.)</p>_
+![landing-page](./public/assets/portfolio-landing.png)
+_<p align="center">Landing Page</p>_
 </br>
-
-![view-entry-and-comments](/assets/view%20one%20entry.png)
-_<p align="center">entry detailed view with comments</p>_
-</br>
-
-![view-from-dashboard](/assets/dashboard-edit.png)
-_<p align="center">all user posts in dashboard</p>_
-<br>
-
-  ![add-blog-entry-view](/assets/add-entry.png)
-  _<p align="center">add new blog post view</p>_
 
   ## Challenges
- This was one of the most challenging projects for me as a new developer. Handling so many routes, views and models at once proved to be a rather steep learning curve. I originally approached the project with the idea of creating each componenent of the MVC paradigm separately and linking later. This was not a winning approach. I quickly realized that the better approach was to complete an entire view from front to back end and then iterate until all views were complete. 
-
- I'm quite satisfied with the end product, which is something I never would have dreamed of creating when I was an avid blogger earlier in life. I would like to return to this app to make it more intuitive for the user and give it a sharper look. 
+This was my first React app build and my first time using Tailwind CSS. I originally built the site as a one-pager using href page anchors to move users to different sections of the page. Converting to conditional rendering was challenging, although less of a headache than I anticipated. The biggest issue I ran into was getting a "TypeError: "handleInputFom" is not a function" within my Contact.js. I eventually found my problem to be missing {} surrounding the function parameters. I appreciate the very specific nature of React and was glad to have found that particularly obvious solution. <br>
 
   ## Tests
 
