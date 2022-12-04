@@ -4,7 +4,7 @@ export default function Footer(){
   return (
   
   <footer className="container py-10 mx-auto">
-    <p className="text-center text-navy">© 2022 Sarah Thoorens | Built Using React and Tailwind 
+    <p className="text-center text-lightBlue">© 2022 Sarah Thoorens | Built Using React and Tailwind 
     </p>
     <div className="flex justify-center">
     <a href="http://linkedin.com/in/sarahthoorens" className=""> 
