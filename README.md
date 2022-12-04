@@ -65,7 +65,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Usage 
 
-To use this program, simply visit the [deployed site](https://sarahthoorens.github.io/react-portfolio/). <br>
+To use this program, simply visit the [deployed site](https://sarahthoorens.github.io/react-portfolio/). (Sidenote: increasing page zoom on github-pages to 100% may be necessary to view correctly.)<br>
 
 To deploy the application locally run ```npm start``` in the terminal.
 
