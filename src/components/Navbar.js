@@ -31,9 +31,11 @@ const Navbar = ({ currentPage, handlePageChange }) => {
               </a>
             </li>
             <li className='nav-item'>
-              <a href="https://drive.google.com/file/d/11_Gc-GYoltiWniFvawxeLaSnOtOWIBsA/view?usp=sharing" className="mr-5 text-vanilla hover:text-white">
+              <a href="#resume"
+                onClick={() => handlePageChange('Resume')}
+                className={`mr-5 text-vanilla hover:text-white ${currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}`} >
                 Resume
-              </a>
+                </a>
             </li>
           </ul>
         </nav>
