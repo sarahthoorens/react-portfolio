@@ -31,7 +31,7 @@ export default function About({ currentPage, handlePageChange }) {
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full relative right-0  md:w-1/2 w-5/6 sm:w-1/2">
-            <img alt="Sarah" className="max-w-xs rounded-full object-cover animate-pulse" src="../../assets/Sarah.png"/>
+            <img alt="Sarah" className="max-w-xs rounded-full object-cover animate-pulse" src="./assets/sarah.png"/>
           </div>
         </div>
       </section>
