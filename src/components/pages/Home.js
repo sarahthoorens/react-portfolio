@@ -17,7 +17,7 @@ export default function Home() {
               <h2 className='title-font text-3lg text-vanilla'> Welcome to this space.</h2>
           </div>
              <div className="lg:max-w-lg lg:w-full relative right-0 flex flex-wrap md:w-1/2 w-5/6 sm:w-1/2">
-                <img alt="Sarah" className="max-w-xs rounded-full object-cover" src="../assets/sarah.png"/>
+                <img alt="Sarah" className="max-w-xs rounded-full object-cover" src="../../assets/sarah.png"/>
               </div>
            
           </div>
