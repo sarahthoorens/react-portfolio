@@ -16,8 +16,9 @@
   1. [Project Description](#Description)
   2. [Usage](#Usage)
   3. [Challenges Encounted](#Challenges)
-  4. [Tests](#Tests)
-  5. [License](#License)
+  4. [Future Development](#Future-Development)
+  5. [Tests](#Tests)
+  6. [License](#License)
   <br>
   
   ## Description
@@ -78,6 +79,9 @@ _<p align="center">Landing Page</p>_
 This was my first React app build and my first time using Tailwind CSS. I originally built the site as a one-pager using href page anchors to move users to different sections of the page. Converting to conditional rendering was challenging, although less of a headache than I anticipated. The biggest issue I ran into was getting a "TypeError: "handleInputFom" is not a function" within my Contact.js. I eventually found my problem to be missing {} surrounding the function parameters. I appreciate the very specific nature of React and was glad to have found that particularly obvious solution. 
 
 Deploying to GitHub Pages required some troubleshooting, as Tailwind uses a dead browerslist version.<br>
+
+## Future Development
+There are many tweaks I'd like to attempt on this portfolio in the future. The carousel feature with my projects needs some reformatting - using the same type of file and image sizes would be a good start. I had fun playing around with some minor animation on the About page, and I'd like to incorporate more animated elements. Obviously, I plan to make the contact form functional, which is something we'll do in a future module. It would also be nice to have a blog feature on the site. <br>
 
   ## Tests
 
