@@ -13,8 +13,10 @@ export default function About({ currentPage, handlePageChange }) {
               <br className="text-m"/>
             <p className="mb-8 leading-relaxed text-vanilla">
             I'm a curious full-stack web developer looking for opportunities to work on practical and innovative projects. 
-            I am a forever-learner with a solid background working in deadline-driven, diverse environments with every level of professional, client and vendor. When I'm not tinkering with code,
-            I'm likely knitting, reading or drafting a pattern. Creating useful and timeless physical and digital products from start to finish is what I enjoy doing most.
+            I am a tenacious learner with a solid background working in deadline-driven, diverse environments with every level of professional, client and vendor. 
+            </p>
+            <p>When I'm not tinkering with code,
+            I'm likely knitting, reading or drafting a pattern. Creating useful and lasting physical and digital products from start to finish is what I enjoy doing most.
             </p>
             <div className="flex justify-center">
               <a href="#contact"
