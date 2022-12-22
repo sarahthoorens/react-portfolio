@@ -31,10 +31,10 @@ const Navbar = ({ currentPage, handlePageChange }) => {
               </a>
             </li>
             <li className='nav-item'>
-              <a href="#resume"
-                onClick={() => handlePageChange('Resume')}
+              <a href="https://www.linkedin.com/in/sarahthoorens/"
+                // onClick={() => handlePageChange('Resume')}
                 className={`mr-5 text-vanilla hover:text-white ${currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}`} >
-                Resume
+                LinkedIn
                 </a>
             </li>
           </ul>
