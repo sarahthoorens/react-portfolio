@@ -1,4 +1,4 @@
-import { CogIcon, ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/solid";
+import { CogIcon } from "@heroicons/react/solid";
 import React, { useState } from 'react';
 import { projects } from "../../data";
 // import GridLayout from "react-grid-layout";
@@ -20,28 +20,26 @@ export default function Projects() {
               Some of the apps I've built.</p>
         </div>
         <div className="relative m-4">
-          {projects.map((project) => {
-            return(
-              <a href={project.link} key={project.image} className="p-2">
-                <div className={project} key={project}>
-                  {project && (
-                    <img alt={project.title} className="max-h-full mx-auto border-4 border-indigo rounded-xl" src={project.image}/>
-                  )}
-                  {project && (
-                    <div className="px-5 py-5 absolute max-h-fit mx-auto p-2 z-10 border-4 top-1 bottom-1 left-1 right-1 max-w-md border-vanilla bg-indigo opacity-0 hover:opacity-95 bg-navy">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-green mb-1">
-                        {project.subtitle}
-                      </h2>
-                      <h1 className="title-font text-lg font-medium text-rose mb-3">
+        {projects.map((project, index) =>
+            <a href={project.link} key={project.image[index]} className="sm:w-1/2 w-100 p-4">
+              <div className="flex relative">
+                <img alt="featured-project-preview" className="max-h-full mx-auto border-4 border-indigo rounded-xl"
+                  src={project.image}/>
+                  <div className="px-5 py-5 absolute max-h-fit mx-auto p-2 z-10 border-4 top-1 bottom-1 left-1 right-1 max-w-md  border-vanilla bg-indigo opacity-0 hover:opacity-95 bg-navy">
+                    <h2 className="tracking-widest text-sm title-font font-medium text-green mb-1">
+                          {project.subtitle}
+                    </h2>
+                    <h1 className="title-font text-lg font-medium text-rose mb-3">
                         {project.title}
-                      </h1>
-                      <p className="leading-relaxed text-vanilla">{project.description}</p>
-                    </div>
+                    </h1>
+                    <p className="leading-relaxed text-vanilla">
+                      {project.description}
+                      </p>
+                  </div>
+              </div>
+            </a>  
                   )}
-                </div>
-              </a>
-            )})}
-        </div>
+          </div>
       </div>
     </section>
    )}
