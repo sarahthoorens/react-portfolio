@@ -25,7 +25,7 @@ export default function Projects() {
               <div className="flex relative">
                 <img alt="featured-project-preview" className="max-h-full mx-auto border-4 border-indigo rounded-xl"
                   src={project.image}/>
-                  <div className="px-5 py-5 absolute max-h-fit mx-auto p-2 z-10 border-4 top-1 bottom-1 left-1 right-1 max-w-full  border-vanilla bg-indigo opacity-0 hover:opacity-95 bg-navy">
+                  <div className="px-5 py-5 absolute max-h-fit mx-auto p-2 z-10 border-4 top-1 bottom-1 left-1 right-1 max-w-md  border-vanilla bg-indigo opacity-0 hover:opacity-95 bg-navy">
                     <h2 className="tracking-widest text-sm title-font font-medium text-green mb-1">
                           {project.subtitle}
                     </h2>
