@@ -43,6 +43,12 @@ export default function Contact () {
              s.thoorens@gmail.com
            </p>
        </div>
+       <div className="lg:w-1/2 mx-auto">
+       
+       <h2 className="title-font font-semibold text-center text-vanilla tracking-widest text-xs">
+        <a href="www.sarahthoorens.square.site">WORK WEBSITE</a>
+       </h2>
+    </div>
 
        <div className="lg:w-1/2 mx-auto flex flex-row items-center">
            
